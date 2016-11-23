@@ -82,6 +82,8 @@ public class BaseSwiftTest implements RuntimeTestSupport {
 		Runtime.getRuntime().addShutdownHook(new Thread() {
 			public void run() {
 				// shutdown logic
+                //debug
+                System.out.println("eraseAntlrFrameWorkDir");
 				eraseAntlrFrameWorkDir();
 			}
 		});
